@@ -7,11 +7,21 @@ COVID-19 tracking app, and more!
 
 ```bash
 ~/medtracker $ pip install pipenv
-~/medtracker $ pipenv install --dev
+~/medtracker $ pipenv install
 ~/medtracker $ cp medtracker/config.py.example medtracker/config.py
 ```
 
 This will set up a minimal configuration which uses a SQLite database located in the `medtracker` directory.
+
+## Development
+
+You'll need a few extra tools for actual development:
+
+```bash
+~/medtracker $ pipenv install --dev
+~/medtracker $ cd .git/hooks
+~/medtracker/.git/hooks $ ln -s ../../hooks/pre-commit.sh pre-commit
+```
 
 ## Testing
 
