@@ -5,6 +5,7 @@ import pytest
 
 from medtracker import medtracker
 
+
 @pytest.fixture
 def client():
     db_fd, medtracker.app.config["DATABASE"] = tempfile.mkstemp()
